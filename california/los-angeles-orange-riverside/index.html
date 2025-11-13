@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online memory questionnaire for Alzheimer's research. Find clinical trials in Irvine, Long Beach, Inglewood, Riverside, and Los Angeles County, California.">
+    <meta name="keywords" content="alzheimer clinical trial, memory test for seniors, dementia test, cognitive test online, Irvine clinical research, Orange County alzheimer studies, Los Angeles alzheimer research">
+    <meta name="author" content="Dr. Stanley Durrleman, PhD - Paris Brain Institute">
+    <meta property="og:title" content="Alzheimer's Clinical Trials - LA, Orange County & Riverside">
+    <meta property="og:description" content="Take our free memory questionnaire and connect with Alzheimer's research studies in Southern California.">
+    <meta property="og:type" content="website">
+    <title>Alzheimer's Clinical Trials in LA, Irvine, Long Beach & Riverside | Free Memory Questionnaire</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+
+        .header {
+            background-color: #ffffff;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+
+        .cta-button {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #1e40af;
+        }
+
+        .cta-button-secondary {
+            background-color: transparent;
+            color: #1e3a8a;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #1e3a8a;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .cta-button-secondary:hover {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+            padding: 4rem 2rem;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: #4b5563;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image {
+            text-align: right;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .benefits {
+            padding: 4rem 2rem;
+            background-color: #ffffff;
+        }
+
+        .benefits-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .benefits h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #1e3a8a;
+            margin-bottom: 3rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-card {
+            padding: 2rem;
+            background-color: #f9fafb;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .benefit-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+
+        .locations {
+            padding: 4rem 2rem;
+            background-color: #f0f4ff;
+        }
+
+        .locations-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .locations h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #1e3a8a;
+            margin-bottom: 3rem;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .location-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .location-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .location-card p {
+            color: #4b5563;
+            margin-bottom: 0.5rem;
+        }
+
+        .process {
+            padding: 4rem 2rem;
+            background-color: #ffffff;
+        }
+
+        .process-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .process h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #1e3a8a;
+            margin-bottom: 3rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .step-number {
+            background-color: #1e3a8a;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .step h3 {
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-section {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button-large {
+            background-color: white;
+            color: #1e3a8a;
+            padding: 1rem 2.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .cta-button-large:hover {
+            transform: translateY(-2px);
+        }
+
+        .cta-button-large-secondary {
+            background-color: transparent;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: 2px solid white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .cta-button-large-secondary:hover {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .resources {
+            padding: 4rem 2rem;
+            background-color: #f9fafb;
+        }
+
+        .resources-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .resources h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #1e3a8a;
+            margin-bottom: 2rem;
+        }
+
+        .resources-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .resources-links a {
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .resources-links a:hover {
+            text-decoration: underline;
+        }
+
+        .author-bio {
+            padding: 4rem 2rem;
+            background-color: #ffffff;
+        }
+
+        .author-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .author-image {
+            flex-shrink: 0;
+        }
+
+        .author-image img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-text h3 {
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+
+        .author-text p {
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+
+        .author-links a {
+            color: #1e3a8a;
+            text-decoration: none;
+            margin-right: 1rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-image {
+                text-align: center;
+            }
+
+            .author-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">DocMemo</div>
+            <a href="https://docmemo.com/questionnaire" class="cta-button">Test your memory</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Join Alzheimer's Research Studies in Los Angeles, Orange County & Riverside</h1>
+                <p>Take our free online memory questionnaire and discover clinical trials that match your profile. We connect you with leading research centers in Southern California.</p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="https://docmemo.com/questionnaire" class="cta-button">Start Free Memory Test</a>
+                    <a href="https://docmemo.com/clinical-trials" class="cta-button-secondary">Explore Clinical Trials</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600" alt="Senior taking memory assessment">
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="benefits-content">
+            <h2>Why Take Our Memory Questionnaire?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>🧠 Free Online Assessment</h3>
+                    <p>Quick and anonymous memory questionnaire accessible from home</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>📊 Personalized Results</h3>
+                    <p>Obtain a detailed report to discuss with your healthcare provider</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🔬 Match with Clinical Trials</h3>
+                    <p>Find Alzheimer's research studies that fit your profile</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🏥 Local Research Centers</h3>
+                    <p>Connect with nearby clinical sites in LA, Orange County & Riverside</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="locations">
+        <div class="locations-content">
+            <h2>Research Sites Near You</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h3>📍 Alzheimer's Orange County</h3>
+                    <p>2515 McCabe Way, Suite 350</p>
+                    <p>Irvine, CA 92614</p>
+                    <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: Irvine, Tustin, Costa Mesa, Newport Beach</p>
+                </div>
+                <div class="location-card">
+                    <h3>📍 Healthy Brain Clinic</h3>
+                    <p>1703 Termino Ave, Suite 201</p>
+                    <p>Long Beach, CA 90804</p>
+                    <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: Long Beach, Lakewood, Signal Hill, Carson</p>
+                </div>
+                <div class="location-card">
+                    <h3>📍 Inglewood Clinical</h3>
+                    <p>501 E Hardy St, Suite 205</p>
+                    <p>Inglewood, CA 90301</p>
+                    <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: Inglewood, Hawthorne, Torrance, El Segundo, Los Angeles County</p>
+                </div>
+                <div class="location-card">
+                    <h3>📍 Riverside Clinical</h3>
+                    <p>3630 Central Ave, Suite 8</p>
+                    <p>Riverside, CA 92506</p>
+                    <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: Riverside, Moreno Valley, Corona, Perris</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="process-content">
+            <h2>How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Take the Memory Test</h3>
+                    <p>Complete our free 10-minute online cognitive assessment</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Review Your Results</h3>
+                    <p>Obtain a detailed report via email to share with your doctor</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Check Eligibility</h3>
+                    <p>See if you qualify for ongoing clinical trials near you</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Connect with Researchers</h3>
+                    <p>We'll match you with the nearest research center</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Get Started?</h2>
+        <p>Take our free memory questionnaire and find clinical trials matching your profile</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="https://docmemo.com/questionnaire" class="cta-button-large">Start Your Free Memory Assessment</a>
+            <a href="https://docmemo.com/clinical-trials" class="cta-button-large-secondary">Browse Clinical Trials</a>
+        </div>
+    </section>
+
+    <section class="resources">
+        <div class="resources-content">
+            <h2>Local Alzheimer's Resources</h2>
+            <div class="resources-links">
+                <a href="https://www.alzoc.org/" target="_blank" rel="noopener">Alzheimer's Orange County</a>
+                <a href="https://www.alz.org/socal" target="_blank" rel="noopener">Alzheimer's Association SoCal</a>
+                <a href="https://www.alzheimersla.org/for-families/services/support-groups/" target="_blank" rel="noopener">Alzheimer's Los Angeles</a>
+                <a href="https://aging.ca.gov/" target="_blank" rel="noopener">California Department of Aging</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="author-bio">
+        <div class="author-content">
+            <div class="author-image">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGEn5OzdJZzZg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730728540585?e=1764806400&v=beta&t=TIPA1u3pSoFy1ghwiDpKi67mD5rbIH2odXGmFg3MF0Y" alt="Dr. Stanley Durrleman">
+            </div>
+            <div class="author-text">
+                <h3>About the Founder</h3>
+                <h4>Dr. Stanley Durrleman, PhD</h4>
+                <p>Dr. Durrleman is a research scientist at the Paris Brain Institute (Institut du Cerveau - ICM) and founder of Qairnel. His pioneering work in mathematical modeling has enabled early prediction of Alzheimer's disease progression, bridging advanced neuroscience research with clinical applications to improve patient care and accelerate clinical trials.</p>
+                <div class="author-links">
+                    <a href="https://www.linkedin.com/company/qairnel" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://www.institutducerveau-icm.org/en/" target="_blank" rel="noopener">Paris Brain Institute</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DocMemo by <a href="https://qairnel.com/" target="_blank" rel="noopener" style="color: white; text-decoration: underline;">Qairnel</a> | Paris Brain Institute</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+            <a href="https://docmemo.com/privacy-policy" style="color: white; margin: 0 1rem;">Privacy Policy</a>
+            <a href="https://docmemo.com/terms-conditions" style="color: white; margin: 0 1rem;">Terms of Service</a>
+        </p>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "DocMemo Clinical Research Network - Los Angeles, Orange County & Riverside",
+      "description": "Free online memory questionnaire and Alzheimer's disease clinical trial matching in Southern California",
+      "url": "https://alzheimer-research.docmemo.com/california/los-angeles-orange-riverside",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "2515 McCabe Way, Suite 350",
+          "addressLocality": "Irvine",
+          "addressRegion": "CA",
+          "postalCode": "92614"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "1703 Termino Ave, Suite 201",
+          "addressLocality": "Long Beach",
+          "addressRegion": "CA",
+          "postalCode": "90804"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "501 E Hardy St, Suite 205",
+          "addressLocality": "Inglewood",
+          "addressRegion": "CA",
+          "postalCode": "90301"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "3630 Central Ave, Suite 8",
+          "addressLocality": "Riverside",
+          "addressRegion": "CA",
+          "postalCode": "92506"
+        }
+      ],
+      "medicalSpecialty": "Neurology"
+    }
+    </script>
+</body>
+</html>
