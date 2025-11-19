@@ -1,0 +1,27 @@
+# DocMemo Alzheimer's Research Finder
+
+> Free online memory questionnaire and clinical trial matching service.
+
+## What we do
+- **Free Memory Assessment**: A 10-minute online questionnaire to screen for memory issues.
+- **Clinical Trial Matching**: We match individuals with Alzheimer's clinical trials based on their profile.
+- **Local Connection**: We connect participants to local research centers in California and Florida.
+
+## Key Pages
+- [Home - Location Selection](https://alzheimer-research.docmemo.com/)
+- [California Research Centers](https://alzheimer-research.docmemo.com/california/los-angeles-orange-riverside/)
+
+## Locations Served
+- **California**: Los Angeles, Orange County, Riverside, Irvine, Long Beach, Inglewood.
+- **Florida**: Marion County (Ocala) - *Coming Soon*.
+
+## Scientific Foundation
+Our approach is based on computational modeling research from:
+- **Paris Brain Institute (Institut du Cerveau - ICM)**
+- **Inria**: Research on Alzheimer's disease and personalized medicine.
+- **AAIC 2025**: Presented at the Alzheimer's Association International Conference.
+
+## Contact & Organization
+- **Website**: [https://docmemo.com](https://docmemo.com)
+- **Company**: [Qairnel](https://qairnel.com)
+- **Founder**: Dr. Stanley Durrleman, PhD (Paris Brain Institute)
