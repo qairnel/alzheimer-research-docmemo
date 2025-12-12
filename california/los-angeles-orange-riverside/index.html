@@ -399,6 +399,136 @@
                 text-align: center;
             }
         }
+
+        .content-section {
+            padding: 4rem 2rem;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-container h2 {
+            font-size: 2rem;
+            color: #1e3a8a;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .content-container h3 {
+            font-size: 1.5rem;
+            color: #1e3a8a;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-container p {
+            margin-bottom: 1.5rem;
+            color: #4b5563;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .content-container ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #4b5563;
+        }
+
+        .content-container li {
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .bg-gray {
+            background-color: #f9fafb;
+        }
+
+        .bg-white {
+            background-color: #ffffff;
+        }
+
+        .bg-blue-light {
+            background-color: #f0f4ff;
+        }
+
+        .accordion-section {
+            padding: 4rem 2rem;
+            background-color: #f9fafb;
+        }
+
+        .accordion-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            transition: background-color 0.3s;
+            user-select: none;
+        }
+
+        .accordion-header:hover {
+            background-color: #f0f4ff;
+        }
+
+        .accordion-header h2 {
+            font-size: 1.25rem;
+            color: #1e3a8a;
+            margin: 0;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .accordion-icon {
+            color: #1e3a8a;
+            font-weight: bold;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+            margin-left: 1rem;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 2rem;
+        }
+
+        .accordion-item.active .accordion-content {
+            padding-bottom: 1.5rem;
+        }
+
+        .accordion-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #4b5563;
+        }
+
+        .accordion-content li {
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        /* Utility to hide elements if needed, though not strictly necessary if we restructure HTML */
     </style>
 </head>
 
@@ -423,8 +553,8 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="../../pictures/Senior taking memory assessment.jpg"
-                        alt="Senior taking memory assessment" fetchpriority="high">
+                    <img src="../../pictures/Senior taking memory assessment.jpg" alt="Senior taking memory assessment"
+                        fetchpriority="high">
                 </div>
             </div>
         </section>
@@ -489,6 +619,116 @@
                             Corona, Perris</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="accordion-section">
+            <div class="accordion-container">
+
+                <!-- Item 1 -->
+                <div class="accordion-item active">
+                    <div class="accordion-header">
+                        <h2>Understanding the Memory Questionnaire</h2>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p style="margin-top: 1rem;">The DocMemo questionnaire evaluates lifestyle, medical history,
+                            family background and functional
+                            changes using validated tools such as the CAIDE risk score and the Cognitive Function
+                            Instrument
+                            (CFI). These scientifically recognized questionnaires are used in Alzheimer’s prevention
+                            research
+                            and help determine whether a medical consultation or memory assessment may be useful. The
+                            test takes
+                            about 10 minutes and is fully anonymous. At the end of the assessment, you receive personal
+                            guidance
+                            that you can share with your healthcare provider.</p>
+                        <p>If your answers suggest that participation in a clinical study might be appropriate, we help
+                            connect
+                            you with nearby research sites in Los Angeles, Orange County and Riverside. Participation is
+                            entirely voluntary, and your information is not shared with research centers unless you
+                            choose to
+                            contact them.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2>Who Should Consider Taking the Test?</h2>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p style="margin-top: 1rem;">The memory questionnaire is designed for adults aged 45+ who:</p>
+                        <ul>
+                            <li>Notice recent changes in memory or daily functioning</li>
+                            <li>Have a parent or family history of Alzheimer’s disease</li>
+                            <li>Want to check eligibility for ongoing clinical trials</li>
+                            <li>Care for a spouse or parent showing early signs of cognitive change</li>
+                        </ul>
+                        <p>The questionnaire is designed for individuals and families seeking clarity.</p>
+                        <p>Memory loss does not always indicate Alzheimer’s disease. Stress, sleep, medications and
+                            other
+                            conditions can affect memory. The goal of the questionnaire is not to give a diagnosis but
+                            to
+                            provide clarity, reduce uncertainty and offer next steps. If needed, the tool guides you
+                            toward
+                            professional evaluation or relevant clinical research opportunities.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2>A Supportive Approach for Families</h2>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p style="margin-top: 1rem;">Memory changes can be confusing and often worrying. DocMemo aims to
+                            offer reassurance, structure and
+                            actionable next steps. Your responses help identify whether a medical evaluation is
+                            recommended, and
+                            whether you might match current Alzheimer’s clinical trials in Southern California.</p>
+                        <p>Because Alzheimer’s disease progresses slowly and signs may appear long before diagnosis,
+                            early
+                            screening allows families to plan ahead, access emerging treatments, and consider
+                            participation in
+                            research that may help future generations.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2>Clinical Trial Pre‑Screening</h2>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p style="margin-top: 1rem;">Alongside the memory questionnaire, DocMemo offers a quick,
+                            anonymous pre‑screening to see whether
+                            your medical profile matches an Alzheimer’s clinical trial currently recruiting in Southern
+                            California.</p>
+                        <p>The process takes only a few minutes:</p>
+                        <ul>
+                            <li>If you match a study, we can connect you with a nearby research center for a free
+                                evaluation.
+                            </li>
+                            <li>If you don’t match, you may leave your email to be notified of future opportunities.
+                            </li>
+                            <li>Both completely optional.</li>
+                        </ul>
+                        <h3 style="font-size: 1.1rem; color: #1e3a8a; margin-top: 1rem; margin-bottom: 0.5rem;">It is
+                            designed for:</h3>
+                        <ul>
+                            <li>People concerned about memory changes who want clear next steps</li>
+                            <li>Volunteers interested in joining Alzheimer’s research</li>
+                        </ul>
+                        <p>DocMemo helps you understand your situation and, when relevant, access research options that
+                            may
+                            support you or help advance future Alzheimer’s treatments.</p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -735,6 +975,51 @@
         ]
     }
 </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const headers = document.querySelectorAll('.accordion-header');
+
+            // Function to open an item
+            function openItem(item) {
+                const content = item.querySelector('.accordion-content');
+                item.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+
+            // Function to close an item
+            function closeItem(item) {
+                const content = item.querySelector('.accordion-content');
+                item.classList.remove('active');
+                content.style.maxHeight = null;
+            }
+
+            // Initialize active items
+            document.querySelectorAll('.accordion-item.active').forEach(item => {
+                openItem(item);
+            });
+
+            headers.forEach(header => {
+                header.addEventListener('click', function () {
+                    const item = this.parentElement;
+                    const isActive = item.classList.contains('active');
+
+                    // Close all items
+                    document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                        if (otherItem !== item) {
+                            closeItem(otherItem);
+                        }
+                    });
+
+                    // Toggle clicked item
+                    if (isActive) {
+                        closeItem(item);
+                    } else {
+                        openItem(item);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
