@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Free online memory questionnaire for Alzheimer's research. Find clinical trials in Irvine, Long Beach, Inglewood, Riverside, and Los Angeles County, California.">
+        content="Free online memory questionnaire for Alzheimer's research. Find clinical trials in Orlando, Winter Garden, Clermont, The Villages, and Central Florida.">
     <meta name="keywords"
-        content="alzheimer clinical trial, memory test for seniors, dementia test, cognitive test online, Irvine clinical research, Orange County alzheimer studies, Los Angeles alzheimer research">
+        content="alzheimer clinical trial, memory test for seniors, dementia test, cognitive test online, Orlando clinical research, Central Florida alzheimer studies, The Villages alzheimer research">
     <meta name="author" content="Dr. Stanley Durrleman, PhD - Paris Brain Institute">
-    <meta property="og:title" content="Alzheimer's Clinical Trials - LA, Orange County & Riverside">
+    <meta property="og:title" content="Alzheimer's Clinical Trials - Central Florida">
     <meta property="og:description"
-        content="Take our free memory questionnaire and connect with Alzheimer's research studies in Southern California.">
+        content="Take our free memory questionnaire and connect with Alzheimer's research studies in Central Florida.">
     <meta property="og:type" content="website">
-    <title>Alzheimer's Clinical Trials in LA, Irvine, Long Beach & Riverside | Free Memory Questionnaire</title>
+    <title>Alzheimer's Clinical Trials in Orlando, Winter Garden & The Villages | Free Memory Questionnaire</title>
     <link rel="icon" href="../../pictures/brain.ico" type="image/x-icon">
 
     <style>
@@ -456,13 +456,105 @@
 
 
         /* Utility to hide elements if needed, though not strictly necessary if we restructure HTML */
+
+        .trials {
+            padding: 4rem 2rem;
+            background-color: #ffffff;
+        }
+
+        .trials-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .trials h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #1e3a8a;
+            margin-bottom: 3rem;
+        }
+
+        .trials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .trial-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .trial-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            border-color: #1e3a8a;
+        }
+
+        .trial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .trial-header h3 {
+            color: #1e3a8a;
+            font-size: 1.25rem;
+            margin: 0;
+        }
+
+        .trial-badge {
+            background-color: #dbeafe;
+            color: #1e3a8a;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .trial-details {
+            flex-grow: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        .trial-details p {
+            margin-bottom: 0.5rem;
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+
+        .trial-details strong {
+            color: #1f2937;
+        }
+
+        .trial-link {
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .trial-link:hover {
+            color: #1e40af;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <header class="header">
         <div class="header-content">
-            <div class="logo">DocMemo</div>
+            <a href="/" class="logo" style="text-decoration: none;">DocMemo</a>
         </div>
     </header>
 
@@ -470,9 +562,9 @@
         <section class="hero">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Join Alzheimer's Research Studies in Los Angeles, Orange County & Riverside</h1>
+                    <h1>Join Alzheimer's Research Studies in Central Florida</h1>
                     <p>Take our free online questionnaire and discover clinical trials that match your profile.
-                        We connect you with leading research centers in Southern California.</p>
+                        We connect you with leading research centers in Orlando, Winter Garden, and The Villages.</p>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                         <a href="https://docmemo.com/trial-finder" class="cta-button">Find my research study</a>
                         <a href="https://docmemo.com/clinical-trials" class="cta-button-secondary">Explore Clinical
@@ -480,8 +572,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="../../pictures/Senior taking memory assessment.jpg" alt="Senior taking memory assessment"
-                        fetchpriority="high">
+                    <img src="../../pictures/Senior Florida.jpg" alt="Senior Florida" fetchpriority="high">
                 </div>
             </div>
         </section>
@@ -504,7 +595,7 @@
                     </div>
                     <div class="benefit-card">
                         <h3>🏥 Local Research Centers</h3>
-                        <p>Connect with nearby clinical sites in LA, Orange County & Riverside</p>
+                        <p>Connect with nearby clinical sites in Central Florida</p>
                     </div>
                 </div>
             </div>
@@ -515,39 +606,33 @@
                 <h2>Research Sites Near You</h2>
                 <div class="locations-grid">
                     <div class="location-card">
-                        <h3>📍 Alzheimer's Orange County</h3>
-                        <p>2515 McCabe Way, Suite 350</p>
-                        <p>Irvine, CA 92614</p>
-                        <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: Irvine, Tustin, Costa
-                            Mesa,
-                            Newport Beach</p>
+                        <h3>📍 K2 Medical Research - Winter Garden</h3>
+                        <p>17309 Pagonia Road</p>
+                        <p>Clermont, FL 34711</p>
+                        <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: Winter Garden, Clermont,
+                            Ocoee, Minneola</p>
                     </div>
                     <div class="location-card">
-                        <h3>📍 Healthy Brain Clinic</h3>
-                        <p>1703 Termino Ave, Suite 201</p>
-                        <p>Long Beach, CA 90804</p>
-                        <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: Long Beach, Lakewood,
-                            Signal
-                            Hill, Carson</p>
+                        <h3>📍 K2 Medical Research - Orlando</h3>
+                        <p>101 Southhall Lane, Suite 150</p>
+                        <p>Maitland, FL 32751</p>
+                        <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: Orlando, Maitland,
+                            Winter Park, Altamonte Springs</p>
                     </div>
                     <div class="location-card">
-                        <h3>📍 Inglewood Clinical</h3>
-                        <p>501 E Hardy St, Suite 205</p>
-                        <p>Inglewood, CA 90301</p>
-                        <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: Inglewood, Hawthorne,
-                            Torrance, El Segundo, Los Angeles County</p>
-                    </div>
-                    <div class="location-card">
-                        <h3>📍 Riverside Clinical</h3>
-                        <p>3630 Central Ave, Suite 8</p>
-                        <p>Riverside, CA 92506</p>
-                        <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: Riverside, Moreno
-                            Valley,
-                            Corona, Perris</p>
+                        <h3>📍 K2 Medical Research - The Villages</h3>
+                        <p>1400 US HWY 441 North, Suite 537</p>
+                        <p>The Villages, FL 32159</p>
+                        <p style="margin-top: 0.5rem;">8577 NE 138th Lane</p>
+                        <p>Lady Lake, FL 32159</p>
+                        <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 600;">Serving: The Villages, Lady Lake,
+                            Leesburg, Wildwood</p>
                     </div>
                 </div>
             </div>
         </section>
+
+
 
 
 
@@ -590,15 +675,41 @@
             </div>
         </section>
 
+        <section class="trials">
+            <div class="trials-content">
+                <h2>Ongoing Clinical Trials in Central Florida</h2>
+                <div class="trials-grid">
+                    <!-- TRONTIER_1 -->
+                    <div class="trial-card">
+                        <div class="trial-header">
+                            <h3>TRONTIER-1</h3>
+                            <span class="trial-badge">Phase 3</span>
+                        </div>
+                        <div class="trial-details">
+                            <p><strong>Investigator:</strong> Roche</p>
+                            <p><strong>Target:</strong> MCI to Mild Dementia Due to AD</p>
+                            <p><strong>Duration:</strong> 72 weeks</p>
+                            <p><strong>Procedure:</strong> Intravenous (IV)</p>
+                        </div>
+                        <a href="https://clinicaltrials.gov/study/NCT07169578?id=NCT07169578" target="_blank"
+                            rel="noopener" class="trial-link">View Study Details →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="resources">
             <div class="resources-content">
                 <h2>Local Alzheimer's Resources</h2>
                 <div class="resources-links">
-                    <a href="https://www.alzoc.org/" target="_blank" rel="noopener">Alzheimer's Orange County</a>
-                    <a href="https://www.alz.org/socal" target="_blank" rel="noopener">Alzheimer's Association SoCal</a>
-                    <a href="https://www.alzheimersla.org/for-families/services/support-groups/" target="_blank"
-                        rel="noopener">Alzheimer's Los Angeles</a>
-                    <a href="https://aging.ca.gov/" target="_blank" rel="noopener">California Department of Aging</a>
+                    <a href="https://www.adrccares.org/" target="_blank" rel="noopener">Alzheimer's & Dementia Resource
+                        Center</a>
+                    <a href="https://www.alz.org/cnfl" target="_blank" rel="noopener">Alzheimer's Association Central &
+                        North Florida</a>
+                    <a href="https://www.seniorresourcealliance.org/" target="_blank" rel="noopener">Senior Resource
+                        Alliance</a>
+                    <a href="https://elderaffairs.org/" target="_blank" rel="noopener">Florida Department of Elder
+                        Affairs</a>
                 </div>
             </div>
         </section>
@@ -618,9 +729,9 @@
                         applications
                         to improve patient care and accelerate clinical trials.</p>
                     <div class="author-links">
-                        <a href="https://www.linkedin.com/in/stanley-durrleman/" target="_blank"
+                        <a href="https://qairnel.com/" target="_blank" rel="noopener">Qairnel.com</a>
+                        <a href="https://www.linkedin.com/in/stanley-durrleman-1725336/" target="_blank"
                             rel="noopener">LinkedIn</a>
-                        <a href="https://qairnel.com" target="_blank" rel="noopener">Qairnel</a>
                         <a href="https://www.institutducerveau-icm.org/en/" target="_blank" rel="noopener">Paris Brain
                             Institute</a>
                     </div>
@@ -630,171 +741,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 DocMemo by <a href="https://qairnel.com/" target="_blank" rel="noopener"
-                style="color: white; text-decoration: underline;">Qairnel</a> | Paris Brain Institute
-        </p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-            <a href="https://docmemo.com/privacy-policy" style="color: white; margin: 0 1rem;">Privacy Policy</a>
-            <a href="https://docmemo.com/terms-conditions" style="color: white; margin: 0 1rem;">Terms of Service</a>
-        </p>
+        <p>&copy; 2024 DocMemo. All rights reserved.</p>
     </footer>
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "MedicalOrganization",
-        "name": "DocMemo Clinical Research Network - Los Angeles, Orange County & Riverside",
-        "description": "Free online memory questionnaire and Alzheimer's disease clinical trial matching in Southern California",
-        "url": "https://alzheimer-research.docmemo.com/california/los-angeles-orange-riverside",
-        "address": [
-            {
-                "@type": "PostalAddress",
-                "streetAddress": "2515 McCabe Way, Suite 350",
-                "addressLocality": "Irvine",
-                "addressRegion": "CA",
-                "postalCode": "92614"
-            },
-            {
-                "@type": "PostalAddress",
-                "streetAddress": "1703 Termino Ave, Suite 201",
-                "addressLocality": "Long Beach",
-                "addressRegion": "CA",
-                "postalCode": "90804"
-            },
-            {
-                "@type": "PostalAddress",
-                "streetAddress": "501 E Hardy St, Suite 205",
-                "addressLocality": "Inglewood",
-                "addressRegion": "CA",
-                "postalCode": "90301"
-            },
-            {
-                "@type": "PostalAddress",
-                "streetAddress": "3630 Central Ave, Suite 8",
-                "addressLocality": "Riverside",
-                "addressRegion": "CA",
-                "postalCode": "92506"
-            }
-        ],
-        "medicalSpecialty": "Neurology"
-    }
-</script>
-    <!-- 🚀 LocalBusiness -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "DocMemo - Alzheimer's Clinical Trial Matching Service",
-        "image": "https://docmemo.com/logo.png",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "24 bis rue Victor Hugo",
-            "addressLocality": "Bourg-la-Reine",
-            "postalCode": "92340",
-            "addressCountry": "FR"
-        },
-        "medicalSpecialty": [
-            "Neurology",
-            "Geriatrics",
-            "Psychiatry",
-            "Cognitive Neurology",
-            "Memory Disorders"
-        ],
-        "founder": [
-        {
-            "@type": "Person",
-            "name": "Stanley Durrleman",
-            "jobTitle": "CEO / Co-founder",
-            "description": "Researcher, PhD in applied mathematics, co-director of the Paris Brain Institute laboratory, Inria Académie des Sciences prize"
-        },
-        {
-            "@type": "Person",
-            "name": "Igor Koval",
-            "jobTitle": "CTO / Co-founder",
-            "description": "Researcher, PhD in mathematics applied to neuroscience, Deep Learning lecturer"
-        }
-    ],
-        "@id": "https://alzheimer-research.docmemo.com/california/los-angeles-orange-riverside/",
-        "url": "https://alzheimer-research.docmemo.com/california/los-angeles-orange-riverside/",
-        "description": "Free online memory screening and Alzheimer's clinical trial eligibility service for residents of Los Angeles, Orange County, Irvine, Long Beach, Inglewood and Riverside.",
-        "areaServed": [
-            {
-                "@type": "City",
-                "name": "Los Angeles"
-            },
-            {
-                "@type": "City",
-                "name": "Irvine"
-            },
-            {
-                "@type": "City",
-                "name": "Long Beach"
-            },
-            {
-                "@type": "City",
-                "name": "Inglewood"
-            },
-            {
-                "@type": "City",
-                "name": "Riverside"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "Los Angeles County"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "Orange County"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "Riverside County"
-            }
-        ],
-        "serviceType": "Online Memory Assessment and Clinical Trial Eligibility",
-        "provider": {
-            "@type": "Organization",
-            "name": "Qairnel",
-            "url": "https://qairnel.com"
-        },
-        "availableLanguage": [
-            "en",
-            "fr"
-        ],
-        "sameAs": [
-            "https://www.linkedin.com/company/qairnel/"
-        ],
-        "audience": {
-            "@type": "Audience",
-            "audienceType": "Patients with memory concerns, Family members, Healthcare professionals, Clinical trial participants, Retired person"
-        }
-    }
-</script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How can I know if my memory issues are serious?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "DocMemo offers a free online memory screening used by thousands of individuals and healthcare professionals."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I check if I'm eligible for Alzheimer's clinical trials in Los Angeles?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, DocMemo provides an online eligibility test for Alzheimer’s clinical trials and directs you to the nearest recruiting center."
-                }
-            }
-        ]
-    }
-</script>
-    </script>
+
 </body>
 
 </html>

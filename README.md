@@ -8,8 +8,8 @@ These landing pages serve as local SEO entry points to connect individuals conce
 
 ## 🌐 Local Pages
 
-- **California (LA/Orange/Riverside)**: https://alzheimer-research.docmemo.com/california/los-angeles-orange-riverside/
-- **Florida (Central Florida)**: https://alzheimer-research.docmemo.com/florida/central-florida/
+- **California (Southern California)**: https://alzheimer-research.docmemo.com/southern-california/
+- **Florida (Central Florida)**: https://alzheimer-research.docmemo.com/central-florida/
 
 ## 🛠️ Tech Stack
 
@@ -24,12 +24,10 @@ alzheimer-research-docmemo/
 ├── CNAME (domain)
 ├── sitemap.xml
 ├── robots.txt
-├── california/
-│   └── los-angeles-orange-riverside/
-│       └── index.html
-└── florida/
-    └── central-florida/
-        └── index.html
+├── southern-california/
+│   └── index.html
+└── central-florida/
+    └── index.html
 ```
 
 ## 🚀 Deployment
