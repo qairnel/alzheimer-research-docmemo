@@ -10,10 +10,11 @@
 ## Key Pages
 - [Home - Location Selection](https://alzheimer-research.docmemo.com/)
 - [California Research Centers](https://alzheimer-research.docmemo.com/california/los-angeles-orange-riverside/)
+- [Central Florida Research Centers](https://alzheimer-research.docmemo.com/florida/central-florida/)
 
 ## Locations Served
 - **California**: Los Angeles, Orange County, Riverside, Irvine, Long Beach, Inglewood.
-- **Florida**: Marion County (Ocala) - *Coming Soon*.
+- **Florida**: Orlando, Winter Garden, The Villages, Clermont, Maitland.
 
 ## Scientific Foundation
 Our approach is based on computational modeling research from:

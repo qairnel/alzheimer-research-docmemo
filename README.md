@@ -9,6 +9,7 @@ These landing pages serve as local SEO entry points to connect individuals conce
 ## 🌐 Local Pages
 
 - **California (LA/Orange/Riverside)**: https://alzheimer-research.docmemo.com/california/los-angeles-orange-riverside/
+- **Florida (Central Florida)**: https://alzheimer-research.docmemo.com/florida/central-florida/
 
 ## 🛠️ Tech Stack
 
@@ -27,7 +28,7 @@ alzheimer-research-docmemo/
 │   └── los-angeles-orange-riverside/
 │       └── index.html
 └── florida/
-    └── marion/
+    └── central-florida/
         └── index.html
 ```
 
