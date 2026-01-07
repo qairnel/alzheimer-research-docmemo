@@ -7,6 +7,12 @@
 - **Clinical Trial Matching**: We match individuals with Alzheimer's clinical trials based on their profile.
 - **Local Connection**: We connect participants to local research centers in California and Florida.
 
+## Current Clinical Trials
+- **MK-2214** (Phase 2, Merck): Target MCI to Mild Dementia.
+- **MINDSET-2** (Phase 3, Bristol-Myers): Target Mild to Moderate AD.
+- **PRECISE-AD** (Phase 1, ProMis Neurosciences): Target MCI to Mild Dementia.
+- **TRONTIER-1** (Phase 3, Roche): Target MCI to Mild Dementia.
+
 ## Key Pages
 - [Home - Location Selection](https://alzheimer-research.docmemo.com/)
 - [California Research Centers](https://alzheimer-research.docmemo.com/southern-california/)
