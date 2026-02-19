@@ -54,4 +54,4 @@ Maintained by Qairnel
 
 ---
 
-© 2025 Qairnel - Paris Brain Institute Research
+© 2026 Qairnel - Paris Brain Institute Research
