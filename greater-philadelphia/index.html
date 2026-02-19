@@ -12,8 +12,18 @@
     <meta property="og:title" content="Alzheimer's Clinical Trials - Greater Philadelphia">
     <meta property="og:description"
         content="Take our free memory questionnaire and connect with Alzheimer's research studies in Greater Philadelphia.">
+    <meta property="og:image" content="https://alzheimer-research.docmemo.com/pictures/Senior%20Pennsylvania.jpg">
+    <meta property="og:url" content="https://alzheimer-research.docmemo.com/greater-philadelphia/">
     <meta property="og:type" content="website">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alzheimer's Clinical Trials in Greater Philadelphia | DocMemo">
+    <meta name="twitter:description" content="Find Alzheimer's research studies in Media and the Philadelphia area.">
+    <meta name="twitter:image" content="https://alzheimer-research.docmemo.com/pictures/Senior%20Pennsylvania.jpg">
+
     <title>Alzheimer's Clinical Trials in Philadelphia & Media | Free Memory Questionnaire</title>
+    <link rel="canonical" href="https://alzheimer-research.docmemo.com/greater-philadelphia/">
     <link rel="icon" href="../../pictures/brain.ico" type="image/x-icon">
 
     <style>
@@ -491,6 +501,27 @@
             color: #1e40af;
             text-decoration: underline;
         }
+
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 1rem auto 0;
+            padding: 0 2rem;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        .breadcrumb a {
+            color: #1e3a8a;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 0.5rem;
+        }
     </style>
 </head>
 
@@ -500,6 +531,10 @@
             <a href="/" class="logo" style="text-decoration: none;">DocMemo</a>
         </div>
     </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>&gt;</span> Greater Philadelphia
+    </nav>
 
     <main>
         <section class="hero">
@@ -515,8 +550,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="../../pictures/Senior Pennsylvania.jpg" alt="Senior Philadelphia"
-                        fetchpriority="high">
+                    <img src="../../pictures/Senior Pennsylvania.jpg" alt="Senior Philadelphia" fetchpriority="high">
                 </div>
             </div>
         </section>
@@ -666,6 +700,41 @@
         <p>&copy; 2025 DocMemo. All rights reserved.</p>
     </footer>
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "Alzheimer's Clinical Trials in Greater Philadelphia",
+        "description": "Find Alzheimer's clinical trials and take free memory assessments in Media and Philadelphia, Pennsylvania.",
+        "serviceType": ["Memory Assessment", "Cognitive Testing", "Alzheimer Screening", "Dementia Testing"],
+        "medicalSpecialty": "Neurology",
+        "about": {
+            "@type": "MedicalCondition",
+            "name": "Alzheimer's Disease"
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "Pennsylvania"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://alzheimer-research.docmemo.com/"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Greater Philadelphia",
+            "item": "https://alzheimer-research.docmemo.com/greater-philadelphia/"
+        }]
+    }
+    </script>
 </body>
 
 </html>
