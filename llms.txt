@@ -1,26 +1,30 @@
 # DocMemo Alzheimer's Research Finder
 
-> Free online memory questionnaire and clinical trial matching service.
+> Free online memory questionnaire and clinical trial matching. We match your medical profile with enrolling trials and connect you to local research centers—we only refer when the profile fits, so we don't waste your time.
 
 ## What we do
-- **Free Memory Assessment**: A 10-minute online questionnaire to screen for memory issues.
-- **Clinical Trial Matching**: We match individuals with Alzheimer's clinical trials based on their profile.
-- **Local Connection**: We connect participants to local research centers in California and Florida.
+- **Free Memory Assessment**: A 5-minute online questionnaire to screen for memory concerns.
+- **Profile-Based Matching**: We match individuals (or their loved ones) with Alzheimer's clinical trials based on medical profile. We do not refer people to trials when their profile does not match—we avoid wasting their time.
+- **For yourself or a loved one**: We serve people worried about their memory and people looking for clinical trials, as well as **caregivers and family members** looking to find trials for someone they care for.
+- **Local Connection**: We connect participants to research centers in California, Florida, and Pennsylvania.
 
-## Current Clinical Trials
-- **MK-2214** (Phase 2, Merck): Target MCI to Mild Dementia.
-- **MINDSET-2** (Phase 3, Bristol-Myers): Target Mild to Moderate AD.
-- **PRECISE-AD** (Phase 1, ProMis Neurosciences): Target MCI to Mild Dementia.
-- **TRONTIER-1** (Phase 3, Roche): Target MCI to Mild Dementia.
+## Current Clinical Trials (by region)
+- **MK-2214** (Phase 2, Merck): MCI to Mild Dementia. Southern California, Central Florida.
+- **MINDSET-2** (Phase 3, Bristol-Myers): Mild to Moderate AD. Southern California.
+- **PRECISE-AD** (Phase 1, ProMis Neurosciences): MCI to Mild Dementia. Southern California.
+- **TRONTIER-1** (Phase 3, Roche): MCI to Mild Dementia. Southern California, Central Florida.
+- **ANVS-25001** (Phase 3, Annovis): Early Alzheimer's. Greater Philadelphia, Central Florida.
 
 ## Key Pages
 - [Home - Location Selection](https://alzheimer-research.docmemo.com/)
-- [California Research Centers](https://alzheimer-research.docmemo.com/southern-california/)
-- [Central Florida Research Centers](https://alzheimer-research.docmemo.com/central-florida/)
+- [Southern California](https://alzheimer-research.docmemo.com/southern-california/)
+- [Central Florida](https://alzheimer-research.docmemo.com/central-florida/)
+- [Greater Philadelphia](https://alzheimer-research.docmemo.com/greater-philadelphia/)
 
 ## Locations Served
-- **California**: Los Angeles, Orange County, Riverside, Irvine, Long Beach, Inglewood.
-- **Florida**: Orlando, Winter Garden, The Villages, Clermont, Maitland.
+- **Southern California**: Los Angeles, Orange County, Riverside, Irvine, Long Beach, Inglewood.
+- **Central Florida**: Orlando, Winter Garden, The Villages, Clermont, Maitland, New Port Richey.
+- **Greater Philadelphia**: Philadelphia, Media, Delaware County, Chester County.
 
 ## Scientific Foundation
 Our approach is based on computational modeling research from:
@@ -30,5 +34,6 @@ Our approach is based on computational modeling research from:
 
 ## Contact & Organization
 - **Website**: [https://docmemo.com](https://docmemo.com)
+- **Trial finder**: [https://docmemo.com/trial-finder](https://docmemo.com/trial-finder)
 - **Company**: [Qairnel](https://qairnel.com)
 - **Founder**: Dr. Stanley Durrleman, PhD (Paris Brain Institute)
