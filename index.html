@@ -825,7 +825,7 @@
                         profile. We connect you with leading research centers across the United States.</p>
                 </div>
                 <div class="hero-image">
-                    <img src="pictures/Alzheimer-clinical-trial-screening.jpg" alt="Alzheimer clinical trial screening"
+                    <img src="pictures/Alzheimer-clinical-trial-screening.webp" alt="Alzheimer clinical trial screening"
                         width="3840" height="2160" fetchpriority="high">
                 </div>
             </div>
@@ -1222,7 +1222,7 @@
         <section class="author-bio">
             <div class="author-content">
                 <div class="author-image">
-                    <img src="pictures/Stanley-Durrleman.jpg" alt="Dr. Stanley Durrleman" width="294" height="315">
+                    <img src="pictures/Stanley-Durrleman.webp" alt="Dr. Stanley Durrleman" width="100" height="100">
                 </div>
                 <div class="author-text">
                     <h3>About the Founder</h3>
@@ -1259,23 +1259,34 @@
         document.addEventListener('DOMContentLoaded', function () {
             const headers = document.querySelectorAll('.accordion-header');
 
-            // Function to open an item
             function openItem(item) {
                 const content = item.querySelector('.accordion-content');
                 item.classList.add('active');
-                content.style.maxHeight = content.scrollHeight + "px";
+                // Read height
+                const height = content.scrollHeight;
+                // Write height in next frame
+                requestAnimationFrame(() => {
+                    content.style.maxHeight = height + "px";
+                });
             }
 
-            // Function to close an item
             function closeItem(item) {
                 const content = item.querySelector('.accordion-content');
                 item.classList.remove('active');
                 content.style.maxHeight = null;
             }
 
-            // Initialize active items
-            document.querySelectorAll('.accordion-item.active').forEach(item => {
-                openItem(item);
+            // Initialize active items without layout thrashing
+            const activeItems = document.querySelectorAll('.accordion-item.active');
+            const initData = Array.from(activeItems).map(item => {
+                const content = item.querySelector('.accordion-content');
+                return { content, height: content.scrollHeight }; // Read phase
+            });
+            
+            requestAnimationFrame(() => {
+                initData.forEach(data => {
+                    data.content.style.maxHeight = data.height + "px"; // Write phase
+                });
             });
 
             headers.forEach(header => {
