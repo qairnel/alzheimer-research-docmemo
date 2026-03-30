@@ -8,12 +8,17 @@ These landing pages serve as local SEO entry points to connect individuals conce
 
 ## 🌐 Local Pages
 
+- **Home Page**: https://alzheimer-research.docmemo.com/
 - **California (Southern California)**: https://alzheimer-research.docmemo.com/southern-california/
 - **Florida (Central Florida)**: https://alzheimer-research.docmemo.com/central-florida/
+- **Pennsylvania (Greater Philadelphia)**: https://alzheimer-research.docmemo.com/greater-philadelphia/
+- **Nebraska (Greater Omaha)**: https://alzheimer-research.docmemo.com/greater-omaha/
+- **Texas (Greater Austin)**: https://alzheimer-research.docmemo.com/greater-austin/
 
 ## 🛠️ Tech Stack
 
-- **Pure HTML/CSS** - No JavaScript frameworks for optimal SEO and crawlability
+- **Pure HTML/CSS/JS** - Lightweight approach for optimal SEO, Core Web Vitals, and crawlability
+- **Image Optimization** - Next-gen WebP format and defined dimensions to prevent Cumulative Layout Shifts (CLS)
 - **GitHub Pages** - US hosting via Fastly CDN for optimal US geolocation
 - **Domain** - alzheimer-research.docmemo.com
 
@@ -24,9 +29,17 @@ alzheimer-research-docmemo/
 ├── CNAME (domain)
 ├── sitemap.xml
 ├── robots.txt
+├── index.html
+├── pictures/
 ├── southern-california/
 │   └── index.html
-└── central-florida/
+├── central-florida/
+│   └── index.html
+├── greater-philadelphia/
+│   └── index.html
+├── greater-omaha/
+│   └── index.html
+└── greater-austin/
     └── index.html
 ```
 
